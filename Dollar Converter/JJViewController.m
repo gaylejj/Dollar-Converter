@@ -26,4 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)convertButton:(UIButton *)sender
+{
+    float usDollar = [self.dollarTextField.text floatValue];
+    float canadianDollar = (usDollar * 1.099270);
+    self.canadianLabel.text = [NSString stringWithFormat:@"%f", canadianDollar];
+    
+}
 @end

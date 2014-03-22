@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface JJViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *dollarTextField;
+@property (strong, nonatomic) IBOutlet UILabel *canadianLabel;
 
+- (IBAction)convertButton:(UIButton *)sender;
 @end
